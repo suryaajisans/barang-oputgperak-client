@@ -1,0 +1,17 @@
+.intro {
+  margin-top: 10vh;
+}
+
+.paginate {
+  align-items: center;
+}
+
+.tableF {
+  display: flex;
+  height: auto;
+}
+
+.buttonAdd {
+  width: auto;
+  height: 2rem;
+}

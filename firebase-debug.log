@@ -1,0 +1,39 @@
+[debug] [2023-04-16T22:02:25.218Z] ----------------------------------------------------------------------
+[debug] [2023-04-16T22:02:25.220Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\surya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-04-16T22:02:25.221Z] CLI Version:   11.27.0
+[debug] [2023-04-16T22:02:25.221Z] Platform:      win32
+[debug] [2023-04-16T22:02:25.221Z] Node Version:  v16.19.1
+[debug] [2023-04-16T22:02:25.222Z] Time:          Mon Apr 17 2023 05:02:25 GMT+0700 (Western Indonesia Time)
+[debug] [2023-04-16T22:02:25.223Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-16T22:02:25.232Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-16T22:02:25.232Z] > authorizing via signed-in user (suryaajisans@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Kerja\Freelance\barang-oputgperak-client
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-16T22:02:33.930Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-16T22:02:35.069Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-16T22:02:35.070Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project barang-oputgperak-client (barang-oputgperak-client) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
