@@ -49,8 +49,24 @@ export const fetchUsers = async (dispatch) => {
       },
     });
 
-    console.log(data, "list users");
-    dispatch(updateListUsers(data));
+    let result = {
+      totalPage: 0,
+      list: {}
+    }
+
+    result.totalPage = Math.ceil(data.length / 10)
+    for(let i = 1; i <= result.totalPage; i ++) {
+      result.list[i] = []
+    }
+    let idPage = 1
+    for(let i = 0; i < data.length; i++) {
+      result.list[idPage].push(data[i])
+      if (i % 10 == 0 && i !== 0) {
+        idPage += 1
+      }
+    }
+
+    dispatch(updateListUsers(result));
   } catch (err) {
     console.log(err);
   }
@@ -134,8 +150,25 @@ export const fetchType = async (dispatch) => {
       },
     });
 
-    console.log(data, "list type");
-    dispatch(updateListTypeItems(data));
+    let result = {
+      totalPage: 0,
+      list: {},
+      full: data
+    }
+    
+    result.totalPage = Math.ceil(data.length / 10)
+    for(let i = 1; i <= result.totalPage; i ++) {
+      result.list[i] = []
+    }
+    let idPage = 1
+    for(let i = 0; i < data.length; i++) {
+      result.list[idPage].push(data[i])
+      if (i % 10 == 0 && i !== 0) {
+        idPage += 1
+      }
+    }
+
+    dispatch(updateListTypeItems(result));
   } catch (err) {
     console.log(err);
   }
@@ -200,8 +233,25 @@ export const fetchPiece = async (dispatch) => {
       },
     });
 
-    console.log(data, "list type");
-    dispatch(updateListPieceItems(data));
+    let result = {
+      totalPage: 0,
+      list: {},
+      full: data
+    }
+
+    result.totalPage = Math.ceil(data.length / 10)
+    for(let i = 1; i <= result.totalPage; i ++) {
+      result.list[i] = []
+    }
+    let idPage = 1
+    for(let i = 0; i < data.length; i++) {
+      result.list[idPage].push(data[i])
+      if (i % 10 == 0 && i !== 0) {
+        idPage += 1
+      }
+    }
+
+    dispatch(updateListPieceItems(result));
   } catch (err) {
     console.log(err);
   }
@@ -266,8 +316,25 @@ export const fetchItem = async (dispatch) => {
       },
     });
 
-    console.log(data, "list type");
-    dispatch(updateListItems(data));
+    let result = {
+      totalPage: 0,
+      list: {},
+      full: data
+    }
+
+    result.totalPage = Math.ceil(data.length / 10)
+    for(let i = 1; i <= result.totalPage; i ++) {
+      result.list[i] = []
+    }
+    let idPage = 1
+    for(let i = 0; i < data.length; i++) {
+      result.list[idPage].push(data[i])
+      if (i % 10 == 0 && i !== 0) {
+        idPage += 1
+      }
+    }
+    
+    dispatch(updateListItems(result));
   } catch (err) {
     console.log(err);
   }
@@ -331,9 +398,26 @@ export const fetchItemIn = async (dispatch) => {
         access_token,
       },
     });
+    
+    let result = {
+      totalPage: 0,
+      list: {},
+      full: data
+    }
 
-    console.log(data, "list item in");
-    dispatch(updateListItemsIn(data));
+    result.totalPage = Math.ceil(data.length / 10)
+    for(let i = 1; i <= result.totalPage; i ++) {
+      result.list[i] = []
+    }
+    let idPage = 1
+    for(let i = 0; i < data.length; i++) {
+      result.list[idPage].push(data[i])
+      if (i % 10 == 0 && i !== 0) {
+        idPage += 1
+      }
+    }
+
+    dispatch(updateListItemsIn(result));
   } catch (err) {
     console.log(err);
   }
@@ -398,8 +482,25 @@ export const fetchItemOut = async (dispatch) => {
       },
     });
 
-    console.log(data, "list item out");
-    dispatch(updateListItemsOut(data));
+    let result = {
+      totalPage: 0,
+      list: {},
+      full: data
+    }
+
+    result.totalPage = Math.ceil(data.length / 10)
+    for(let i = 1; i <= result.totalPage; i ++) {
+      result.list[i] = []
+    }
+    let idPage = 1
+    for(let i = 0; i < data.length; i++) {
+      result.list[idPage].push(data[i])
+      if (i % 10 == 0 && i !== 0) {
+        idPage += 1
+      }
+    }
+
+    dispatch(updateListItemsOut(result));
   } catch (err) {
     console.log(err);
   }
@@ -534,9 +635,26 @@ export const fetchHistory = async (dispatch) => {
         access_token,
       },
     });
+    
+    let result = {
+      totalPage: 0,
+      list: {},
+      full: data
+    }
 
-    console.log(data, "list histories");
-    dispatch(updateListHistories(data));
+    result.totalPage = Math.ceil(data.length / 10)
+    for(let i = 1; i <= result.totalPage; i ++) {
+      result.list[i] = []
+    }
+    let idPage = 1
+    for(let i = 0; i < data.length; i++) {
+      result.list[idPage].push(data[i])
+      if (i % 10 == 0 && i !== 0) {
+        idPage += 1
+      }
+    }
+
+    dispatch(updateListHistories(result));
   } catch (err) {
     console.log(err);
   }

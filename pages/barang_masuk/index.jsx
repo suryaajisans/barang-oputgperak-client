@@ -173,7 +173,7 @@ const BarangMasuk = () => {
                         setEnterItem({ ...enterItem, item_id: e.target.value })
                       }
                     >
-                      {listItems?.map((el) => (
+                      {listItems?.full?.map((el) => (
                         <MenuItem key={el.id} value={el.id}>
                           {el.name}
                         </MenuItem>

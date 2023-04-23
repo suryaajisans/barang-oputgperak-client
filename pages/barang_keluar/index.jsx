@@ -179,7 +179,7 @@ const BarangKeluar = () => {
                       value={exitItem.item_id}
                       label="Satuan Barang"
                     >
-                      {listItems?.map((el) => (
+                      {listItems?.full?.map((el) => (
                         <MenuItem
                           key={el.id}
                           value={el.id}

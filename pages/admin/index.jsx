@@ -554,7 +554,7 @@ function AdminContent() {
                       setItem({ ...item, type_id: e.target.value })
                     }
                   >
-                    {listTypeItems?.map((el) => (
+                    {listTypeItems?.full?.map((el) => (
                       <MenuItem key={el.id} value={el.id}>
                         {el.name}
                       </MenuItem>
@@ -574,7 +574,7 @@ function AdminContent() {
                       setItem({ ...item, piece_id: e.target.value })
                     }
                   >
-                    {listPieceItems?.map((el) => (
+                    {listPieceItems?.full?.map((el) => (
                       <MenuItem key={el.id} value={el.id}>
                         {el.name}
                       </MenuItem>
